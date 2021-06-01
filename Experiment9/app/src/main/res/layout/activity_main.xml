@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.javapapers.androidalarmclock">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+
+            android:name=".AlarmActivity"
+            android:label="@string/app_name">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".AlarmService"
+            android:enabled="true" />
+
+        <receiver android:name=".AlarmReceiver" />
+    </application>
+</manifest>//*Android Activity*////*activity_my.xml*////*The Android Activity is designed to be simple. We have a TimePicker component followed by a ToggleButton. That’s it. Choose the time to set the alarm and toggle the switch to on. The alarm will work*//<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context=".MyActivity">
+<TimePicker
+    android:id="@+id/alarmTimePicker"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" />
+
+<ToggleButton
+    android:id="@+id/alarmToggle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/alarmTimePicker"
+    android:layout_centerHorizontal="true"
+    android:onClick="onToggleClicked"
+    android:text="Alarm On/Off" />
+
+<TextView
+
+    android:id="@+id/alarmText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/alarmToggle"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:text=""
+    android:textAppearance="?android:attr/textAppearanceLarge" />
+</RelativeLayout>
+

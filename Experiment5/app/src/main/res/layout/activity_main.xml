@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="100dp"
+    android:stretchColumns="0">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="110dp"
+        android:layout_y="10dp"
+
+        android:text="Employee Detail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="50dp"
+        android:text="Employee ID" />
+
+    <EditText
+        android:id="@+id/editEmpid"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_x="150dp"
+        android:layout_y="50dp"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="100dp"
+        android:text="Employee Name" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_x="150dp"
+        android:layout_y="100dp"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="30dp"
+        android:layout_y="150dp"
+        android:text="Employee Salary" />
+
+    <EditText
+        android:id="@+id/editsalary"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_x="150dp"
+        android:layout_y="150dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_x="30dp"
+        android:layout_y="200dp"
+        android:text="Add Employee" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_x="160dp"
+        android:layout_y="200dp"
+        android:text="Delete Employee" />n
+
+    <Button
+        android:id="@+id/btnModify"
+
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_x="30dp"
+        android:layout_y="250dp"
+        android:text="Modify Employee" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_x="160dp"
+        android:layout_y="250dp"
+        android:text="View Employee" />
+
+    <Button
+        android:id="@+id/btnViewAll"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_x="85dp"
+        android:layout_y="300dp"
+        android:text="View All Employee" />
+</LinearLayout>
+<!--    //*Go to values folder and select string.xml file,Replace the code below*//<?xml version="1.0" encoding="utf-8"?><resources>-->
+<!--<string name="app_name">Employee detail1</string>-->
+
+<!--<string name="hello">Hello World, Employee detail Activity!</string>-->
+
+<!--<string name="title">Employee Details</string>-->
+
+<!--<string name="empid">Enter Employee ID:</string>-->
+
+<!--<string name="name">Enter Name:</string>-->
+
+<!--<string name="salary">Enter salary:</string>-->
+
+<!--<string name="add">Add Employee</string>-->
+
+<!--<string name="delete">Delete Employee</string>-->
+
+<!--<string name="modify">Modify Employee</string>-->
+
+<!--<string name="view">View Employee</string>-->
+
+<!--<string name="view_all">View All Employee</string>-->
+<!--</resources>-->
+
+<!--Now select mainactivity.java file and type the following code.In my coding maniactivity name is EmployeedetailActivity-->
